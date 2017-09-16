@@ -11,8 +11,8 @@
 }
 
 .header-block {
-  background: #333399;
-  color: #f3f3f5;
+  background: $header-background;
+  color: $header-text;
   font-weight: 700;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .header__link {
-  border-bottom: 3px solid #333399;
+  border-bottom: 3px solid $header-background;
   margin: 0 15px -3px 0;
   cursor: pointer;
   &:hover {

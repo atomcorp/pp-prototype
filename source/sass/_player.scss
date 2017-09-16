@@ -1,5 +1,7 @@
 .player-block {
   border-bottom: 3px solid;
+  background: $primary-colour;
+  color: $primary-contrast;
 }
 
 .player {
@@ -9,6 +11,7 @@
   padding: 60px 30px;
   margin: 0 auto;
   max-width: 90rem;
+  box-shadow: 0px 3px 10px rgba(51, 51, 51, 0.23);
 }
 
 .player__stats {
@@ -36,9 +39,17 @@
 .player__teamname {
   font-size: 48px;
   font-weight: 700;
+  margin: 0 0 5px;
 }
 .player__name {
-  font-size: 24px;
+  span {
+    font-weight: 700;
+  }
+}
+
+.player__status {
+    display: flex;
+    justify-content: flex-end;
 }
 
 @mixin label-container() {
@@ -54,12 +65,13 @@
 @mixin tag-name() {
   align-self: center;
   padding: 15px;
-  background: #84ca82;
-  color: #fbfbfb;
+  background: $primary-contrast;
+  color: $primary-colour;
   font-weight: 700;
   text-transform: uppercase;
-  width: 100px;
+  width: 55px;
   text-align: center;
+  font-size: 24px;
 }
 
 .player__gameweek {
@@ -72,6 +84,7 @@
 
 .player__inplay {
   @include tag-name;
+  border-bottom: 1px solid $primary-colour;
 }
 
 .player__predictions {
@@ -84,5 +97,4 @@
 
 .player__added {
   @include tag-name();
-  background: #e69d9d;
 }
