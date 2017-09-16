@@ -1,0 +1,88 @@
+.player-block {
+  border-bottom: 3px solid;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 30px;
+  margin: 0 auto;
+  max-width: 90rem;
+}
+
+.player__stats {
+  display: flex;
+  justify-content: center;
+}
+
+.player__points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.player__point {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+.player__section {
+  width: 33%;
+}
+
+.player__teamname {
+  font-size: 48px;
+  font-weight: 700;
+}
+.player__name {
+  font-size: 24px;
+}
+
+@mixin label-container() {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@mixin label() {
+  padding: 15px;
+  align-self: center;
+}
+
+@mixin tag-name() {
+  align-self: center;
+  padding: 15px;
+  background: #84ca82;
+  color: #fbfbfb;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100px;
+  text-align: center;
+}
+
+.player__gameweek {
+  @include label-container;
+}
+
+.player__week {
+  @include label();
+}
+
+.player__inplay {
+  @include tag-name;
+}
+
+.player__predictions {
+  @include label-container;
+}
+
+.player__prediction {
+  @include label();
+}
+
+.player__added {
+  @include tag-name();
+  background: #e69d9d;
+}

@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  margin: 0 auto;
+  max-width: 90rem;
+}
+
+.header__section {
+  width: 33%;
+}
+
+.header-block {
+  background: #333399;
+  color: #f3f3f5;
+  font-weight: 700;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.header__links {
+  display: flex;
+}
+
+.header__link {
+  border-bottom: 3px solid #333399;
+  margin: 0 15px -3px 0;
+  cursor: pointer;
+  &:hover {
+    border-bottom: 3px solid;
+  }
+}
+
+.header__user {
+  text-align: right;
+}

@@ -1,0 +1,24 @@
+@mixin desktop() {
+  @media (min-width: 800px) {
+    @content;
+  }
+}
+
+.container {
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #333399;
+  background: #fbfbfb;
+}
+
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
